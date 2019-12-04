@@ -41,12 +41,12 @@ const Maker = ({ name, img, bio, twitter, linkedin, producthunt }) => (
 const Footer = props => (
   <footer id='footer'>
     <p className='description' style={{ fontSize: '1em' }}>
-      <a href='https://www.iubenda.com/privacy-policy/52432713'>Privacy Policy</a> | <a href='https://gdpr-checklist.gdprform.io'>Exercise your rights</a>
+      <a target="_blank" rel="noopener noreferrer" href='https://www.iubenda.com/privacy-policy/52432713'>Privacy Policy</a> | <a target="_blank" rel="noopener noreferrer" href='https://xnvbx2k4.gdprform.io/en'>Exercise your rights</a>
     </p>
 
     <div className='gradient'>
-      <h5>About GDPR Checklist</h5>
-      <div className='subtitle'>GDPR Checklist is made by a small team from Belgium 🇧🇪 to help businesses navigate the GDPR landscape.
+      <h5>About CCPA Checklist</h5>
+      <div className='subtitle'>CCPA Checklist is made to help businesses navigate the CCPA landscape.
       The project is inspired by <a href='https://cto-security-checklist.sqreen.io/'>The SaaS CTO Security Checklist</a> created by <a href='https://www.sqreen.io'>Sqreen.io</a></div>
 
       <Makers>

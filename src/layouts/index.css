@@ -1003,11 +1003,11 @@ footer .gradient a+a {
     display: none;
   }
 }
-.controller, .filter-bar li.controller {
+.company, .filter-bar li.company {
   background-color: #E7E7F9;
   color: #807DD3;
 }
-.processor, .filter-bar li.processor {
+.consumer, .filter-bar li.consumer {
   background-color: #E7F5F9;
   color: #5FA2E1;
 }
