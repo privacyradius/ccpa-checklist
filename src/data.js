@@ -250,7 +250,7 @@ export const steps = [
       {
         id: 1,
         title: 'Your company informs when requested by consumers the categories and specific pieces of personal information you have collected about them.',
-        role: [ 'company'],
+        role: [ 'company', 'consumer'],
         description: 'You need to specify the categories of sources from which personal information is collected, the business or commercial purpose for collecting or selling personal information, the categories of third parties with whom you share personal information, the specific pieces of personal information you have collected about the consumer, and the categories of the consumer’s personal information that were sold or disclosed for business purposes in the 12 months preceding the consumer’s verifiable request.',
         links: [
             { 
@@ -286,7 +286,7 @@ export const steps = [
       {
         id: 3,
         title: 'Your company informs the consumer before the point of collection as to the categories of personal information to be collected and the purposes for which the categories of personal information shall be used.',
-        role: [ 'company'],
+        role: [ 'company', 'consumer'],
         description: '',
         links: [
             { 
@@ -326,7 +326,7 @@ export const steps = [
       {
         id: 6,
         title: 'Your company deletes data and responds to customers when requested by them to comply with the CCPA’s right to be forgotten.',
-        role: ['company'],
+        role: ['company', 'consumer'],
         description: 'You need to delete the consumer’s personal information from your records and direct any service providers to delete the consumer’s personal information from their records. For exceptions see Civil Code - SECTION 1798.105. - (d) - (1)-(9).',
         links: [
             { 
@@ -342,7 +342,7 @@ export const steps = [
       {
         id: 7,
         title: 'Your company creates a process, a response and identifies individuals responsible for consumers to opt-out and therefore not selling their data to third parties in response to such a request.',
-        role: [ 'company'],
+        role: [ 'company', 'consumer'],
         description: 'Exceptions to such requests include where retention of the consumer’s personal information is necessary to complete a transaction for which the personal information was collected, provide goods and services to the consumer, or otherwise perform a contract with theconsumer, to detect security incidents, fraud, or illegal activity, to exercise free speech, or ensure the right of another consumer to exercise his or her right of free speech, to Enable internal uses that are reasonably aligned with the expectations of the consumer based on the consumer’s relationship with the business, to comply with a legal obligation or to  use the consumer’s personal information internally and in a lawful manner that is compatible with the context in which the consumer provided the information.',
         links: [ 
           { 
@@ -354,7 +354,7 @@ export const steps = [
       {
         id: 8,
         title: 'By default your company does not sell consumers personal information when they are between 13 & 16 years of age. Nervetheless your company creates a process to allow them to opt-in.',
-        role: [ 'company'],
+        role: [ 'company', 'consumer'],
         description: 'To opt-in the consumer, in the case of consumers between 13 and 16 years of age, or the consumer’s parent or guardian, in the case of consumers who are less than 13 years of age, has affirmatively authorized the sale of the consumer’s personal information. A business that willfully disregards the consumer’s age shall be deemed to have had actual knowledge of the consumer’s age. This right may be referred to as the “right to opt-in.”',
         links: [ 
           { 
@@ -365,8 +365,8 @@ export const steps = [
       },
       {
         id: 9,
-        title: 'Your company does not provides consumers the right to equal service and price.',
-        role: ['company'],
+        title: 'Your company does provide consumers the right to equal services and prices.',
+        role: ['company', 'consumer'],
         description: 'The law prohibits businesses from discriminating against consumers who exercise their rights under the CCPA. A business is specifically prohibited from denying goods or services to a consumer, charging a consumer a different price or rate for goods or services including through the use of discounts or other benefits, imposing penalties on a consumer, providing a consumer with a different level of quality or service, and suggesting a consumer will receive a different price or rate or different level of quality of goods or services.',
         links: [
           { 
@@ -515,15 +515,3 @@ export const roles = {
   'company': 'companies',
   'consumer': 'consumers',
 }
-
-export const differences = [
-  {id: 1, description: 'The GDPR set a penalty limit of 4% of global annual revenues, while the CCPA does not have a ceiling on regulator penalties.'},
-  {id: 2, description:' Any intentional violation of the CCPA will result in a civil penalty of $ 7,500 per incident.'},
-  {id: 3, description: 'The CCPA has pre-defined minimum ($100) and maximum ($750) damage amounts per consumer per incident for private actions against violators, while the GDPR prescribes neither floor nor ceiling values.'},
-  {id: 4, description: 'The CCPA applies to businesses only, while the GDPR covers any entity that processes  personal data of EU residents.'},
-  {id: 5, description: 'The CCPA has a broader definition of personal information than GDPR.'},
-  {id: 6, description: 'Both legislations have different conditions for access and deletion requests of personal data.'},
-  {id: 7, description: 'The CCPA does not expressly include the right to correct errors in processed personal data.'},
-  {id: 8, description: 'The GDPR allows covered entities to establish equivalent mechanisms, while the CCPA prescribes disclosures, communication channels, and other measures.'},
-  {id: 9, description: 'The CCPA does not expressly include the right to stop automated decision making (i.e., the right to require a human to make decisions that have legal implications/effect).'}
-]

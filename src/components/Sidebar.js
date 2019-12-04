@@ -10,7 +10,7 @@ const Sidebar = props => (
       <img src={logo} alt="GDPR Checklist" className="logo" />
     </a>
     <nav>
-    <h4 style={{ marginTop: '20px' }}>Companies</h4>
+    <h4 style={{ marginTop: '20px' }}>Sections</h4>
       <ul>
         <Scrollspy items={['are-you-impacted','types-of-data', 'internal-processes', 'external-communication', 'recommendations']} currentClassName="is-current">
           { steps.map(s => <li key={s.id}><a href={`#${s.id}`}>{s.title}</a></li>)}
