@@ -3,12 +3,13 @@ import { Persist } from "react-persist"
 import Link from 'gatsby-link'
 import Sidebar from '../components/Sidebar'
 import Newsletter from '../components/Newsletter'
-import { steps, roles } from '../data.js'
+import { steps, roles, differences } from '../data.js'
 import meta from '../shared/meta.js'
 import Arrow from '../images/arrow-bottom.svg'
 import Footer from '../components/Footer'
 import Disclaimer from '../components/Disclaimer'
 import Scrollspy from 'react-scrollspy'
+import Collapsible from 'react-collapsible'
 
 class Li extends React.Component {
   constructor() {
@@ -60,7 +61,7 @@ class Li extends React.Component {
           </div>
         </div>
         <div className='body' style={{ display: this.state.isExpanded ? 'block' : 'none' }} >
-          <p>{this.props.description}<br/><br/>Read more:</p>
+          <p>{this.props.description}<br/><br/>Reference:</p>
           <ul>
             {this.props.links.map((l, index) => <li key={index}><a href={l.href} target="_blank">{l.title}</a></li>)}
           </ul>
@@ -88,8 +89,8 @@ class Section extends React.Component {
             var filtered_list = [];
             item.items.map( function(l, index)
                           {
-                            if( ( this.props.controllerSelected  && l.role.includes('controller')  ) ||
-                                    ( this.props.processorSelected  && l.role.includes('processor')  )  )
+                            if( ( this.props.companySelected  && l.role.includes('company')  ) ||
+                                    ( this.props.consumerSelected  && l.role.includes('consumer')  )  )
 
                             {
                                 filtered_list.push( l );
@@ -107,8 +108,8 @@ class Section extends React.Component {
                     <ul className="checklist">
                       { filtered_list.map( function(l, index)
                           {
-                            if( ( this.props.controllerSelected  && l.role.includes('controller')  ) ||
-                                    ( this.props.processorSelected  && l.role.includes('processor')  )  )
+                            if( ( this.props.companySelected  && l.role.includes('company')  ) ||
+                                    ( this.props.consumerSelected  && l.role.includes('consumer')  ) )
 
                             {
                                 return <Li {...l} key={index} top={index * 70} section={item.id} />
@@ -132,53 +133,136 @@ class IndexPage extends React.Component {
   constructor() {
     super()
     this.state = {
-      processorSelected: true,
-      controllerSelected: true
+      companySelected: true,
+      consumerSelected: true
     }
   }
-  toggleController = () => {
-     this.setState({ controllerSelected : !this.state.controllerSelected } );
+  toggleCompany = () => {
+     this.setState({ companySelected : !this.state.companySelected } );
   }
 
-  toggleProcessor = () => {
-     this.setState({ processorSelected : !this.state.processorSelected } );
+  toggleConsumer = () => {
+     this.setState({ consumerSelected : !this.state.consumerSelected } );
   }
 
   render () {
+
+    const elements = differences.map(function(difference){
+    return <li>{difference.description}</li>
+    }
+
+    )
     return (
       <div>
         <div className='wrapper'>
           <div className='columns'>
             <Sidebar />
             <div className="col-9">
-              <h1>The GDPR Compliance Checklist</h1>
-              <h2 className="description first">Achieving GDPR Compliance shouldn't feel like a struggle.
-              This is a basic checklist you can use to harden your GDPR compliancy.</h2>
+              <h1>The CCPA Compliance Checklist</h1>
+              <h2 className="description first">Achieving CCPA Compliance shouldn't feel like a struggle. This is a basic checklist you can use to harden your CCPA compliancy.</h2>
 
-              <div style={{ marginTop: '50px', textAlign: 'center', border: '1px solid #EEE', padding: '10px', marginBottom: '20px' }}>
+              {/* <div style={{ marginTop: '50px', textAlign: 'center', border: '1px solid #EEE', padding: '10px', marginBottom: '20px' }}>
                 <a href="https://app.gdprform.io/register?coupon=earlybird&utm_source=gdprchecklist.op&utm_medium=banner&utm_campaign=gdpr_checklist_early_bird" style={{ color: '#777', textDecoration: 'none', fontSize: '14px', lineHeight: '28px' }}>
                   <span style={{ background: '#41b541', borderRadius: '2px', marginTop: '20px', color: 'white', padding: '4px 6px' }}>New</span> Manage your data subjects requests with GDPR Form. Start your free trial today and receive a 20% discount. (From the makers of GDPR Tracker & Checklist)
                 </a>
+              </div> */}
+              
+              <div className="filter-bar">
+              <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', 'font-weight': 'bold', 'font-size': '20px'}} trigger="What is the CCPA?">
+                  <div className="filter-bar">
+                  <p className="small description">
+                  "The California Consumer Privacy Act (CCPA) is a California state law that enhances privacy rights and consumer protections for California residents. It regulates what businesses are allowed to do with the personal information they collect from California residents.  
+                  </p>
+                  <p className="small description">
+                  The CCPA aims to put data rights back into the hands of consumers.  Consumer will now be able to understand how their data is actually being used.  They will now have a saying in how and with which third parties their data can be shared.  The CCPA is aimed at enforcing protection and privacy of personal and customer data.
+                  </p>
+                  </div>
+              </Collapsible>
               </div>
-
-              <p className="small description">if your organisation is determining the purpose of the storage or processing of personal information, it is considered a <b>controller</b>. If your organisation stores or processes personal data on behalf of another organisation, it is considered a <b>processor</b>. It is possible for your organisation to have both roles. Use the filter below to view only the relevant checklist items for your organisation.</p>
-
-              <p className="small description">
-              This list is far from a legal exhaustive document, it merely tries to help you overcome the struggle.
-
-              <br/><br/>Feel free to <a href="https://github.com/privacyradius/gdpr-checklist" target="_blank">contribute directly</a> on GitHub!
-              </p>
 
               <div className="filter-bar">
-                <h3>Select your organisation's role:</h3>
-                <ul className="selected-three">
-                  <li onClick={this.toggleController} className={this.state.controllerSelected ? 'controller' : ''}><h2>Data Controller: I determine why data is processed</h2></li>
-                  <li onClick={this.toggleProcessor} className={this.state.processorSelected ? 'processor' : ''}><h2>Data Processor: I store or process data for someone else</h2></li>
-                </ul>
+              <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', 'font-weight': 'bold', 'font-size': '20px'}} trigger="When does CCPA become active?">
+                  <div className="filter-bar">
+                  <p className="small description">
+                  The California Consumer Privacy Act officially goes into effect on Jan. 1, 2020. 
+                  </p>
+                  <p className="small description">
+                  With its strict guidelines and penalties, the CCPA is considered revolutionary legislation on data protection in the US.  As with the European Union’s General Data Protection Regulations (GDPR) and the launch date approaching fast, we believe that for most companies, achieving compliance is probably going to take longer than expected.
+                  </p>
+                  </div>
+              </Collapsible>
               </div>
+
+              <div className="filter-bar">
+              <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', 'font-weight': 'bold', 'font-size': '20px'}} trigger="Who does the CCPA protect?">
+                  <div className="filter-bar">
+                  <p className="small description">
+                  The CCPA is designed to protect any individual who is a California resident or a household that can be reasonably identified, by any unique identifier.
+                  </p>
+                  <p className="small description">
+                  It's designed to protect California consumers’ data, and to enforce all organisations that deal with California resident data to take their responsibility to safeguard consumer data seriously.
+                  </p>
+                  </div>
+              </Collapsible>
+              </div>
+
+              <div className="filter-bar">
+              <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', 'font-weight': 'bold', 'font-size': '20px'}} trigger="Who does the CCPA apply to?">
+                  <div className="filter-bar">
+                  <p className="small description">
+                  Just like with the GDPR, one should not underestimate the global impact of the CCPA.  Any organisation globally that collects personal data of California residents and households should validate whether they are required to comply with the CCPA. 
+                  </p>
+                  <p className="small description">
+                  Any organisation that meets one of the following three criteria annually:
+                  </p>
+                  <li className="small description">
+                  Earn revenues greater than $25 million.
+                  </li>
+                  <li className="small description">
+                  Buy, receive, sell or share the personal information of 50,000 or more consumers, households or devices for commercial purposes.
+                  </li>
+                  <li className="small description">
+                  Derive 50 percent of annual revenues from selling consumers’ personal information.
+                  </li>
+                  </div>
+              </Collapsible>
+              </div>
+              
+              <div className="filter-bar">
+              <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', 'font-weight': 'bold', 'font-size': '20px'}} trigger="What are the key differences between the CCPA and the GDPR?">
+                  <div className="filter-bar">
+                  <p className="small description">
+                  Any business that has already complied with the GDPR standards should be able to extend its policies and practices fairly easily to fit the CCPA’s requirements.  At the same time, one should not underestimate the important differences between both legislations. 
+                  </p>
+                  <p className="small description">
+                  The European legislation could be considered more rigorous overall, even though the CCPA takes a broader view of personal information than the GDPR.  For offenders, there is also a significant difference in the fines structure.
+                  </p>
+                  <h3>Here are the most important differences between the CCPA and GDPR:</h3>
+                  <p className="small description">
+                      {elements}
+                  </p>
+                  </div>
+              </Collapsible>
+              </div>
+
+              {/* <div className="filter-bar">
+                <h3>Select who you are:</h3>
+                <ul className="selected-three">
+                  <li onClick={this.toggleCompany} className={this.state.companySelected ? 'company' : ''}><h2>Company: I process personal data</h2></li>
+                  <li onClick={this.toggleConsumer} className={this.state.consumerSelected ? 'consumer' : ''}><h2>Consumer: My personal data is being collected</h2></li>
+                </ul>
+              </div> */}
+
+              <div className="filter-bar">
+                <p className="small description">
+                The list below is far from a legal exhaustive document, it merely tries to help you overcome the struggle.
+                <br/><br/>Feel free to <a href="https://github.com/privacyradius/ccpa-checklist" target="_blank">contribute directly</a> on GitHub!
+                </p>
+              </div>
+
                 { steps.map( (function(s)
                     {
-                    return <Section key={s.id} list={[s]} controllerSelected={this.state.controllerSelected} processorSelected={this.state.processorSelected} />
+                    return <Section key={s.id} list={[s]} companySelected={this.state.companySelected} consumerSelected={this.state.consumerSelected} />
                     }).bind(this)
                     ) }
               <Newsletter />

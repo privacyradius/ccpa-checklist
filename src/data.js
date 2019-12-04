@@ -1,386 +1,509 @@
 export const steps = [
   {
-    id: 'your-data',
-    title:'Your data',
+    id: 'are-you-impacted',
+    title:'Are you impacted?',
     items: [,
       {
         id: 1,
-        title: 'Your company has a list of all types of personal information it holds, the source of that information, who you share it with, what you do with it and how long you will keep it',
-        role: ['processor', 'controller'],
-        description: 'This is a list of the actual types (columns) of information being held (eg Name, social security nr, address,..). For each type, a source should be documented, the parties this information is shared with, the purpose of the information and the duration for which the company will keep this information.',
+        title: 'Your company is for-profit, conducts business in California, collects personal data of California residents and determines the purposes and means of processing consumers\'s personal information.',
+        role: ['company'],
+        description: '',
         links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
-           title: 'GDPR Article 30 – Records of processing activities'
-          },
-          {
-            href: "https://gdprplug.in/gdpr-data-map/",
-            title: "GDPR Data Map Template"
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (c) - (1)",
+            href: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article="
           }
         ]
       },
       {
         id: 2,
-        title: 'Your company has a list of places where it keeps personal information and the ways data flows between them',
-        role: [ 'processor', 'controller'],
-        description: 'This could be a list of databases (eg Mysql), but it could also include offline datastores (paper).',
+        title: 'Your company has annual gross revenues in excess of $25 million or possesses the personal information of 50,000 or more consumers, households & devices or earns more than half of its annual revenue from selling consumers\' personal information.',
+        role: ['company'],
+        description: '',
         links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
-           title: 'GDPR Article 30 – Records of processing activities'
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (c) - (1) - (A)-(C)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
           }
         ]
       },
       {
         id: 3,
-        title: 'Your company has a publicly accessible privacy policy that outlines all processes related to personal data.',
-        role: ['processor', 'controller'],
-        description: 'You should include information about all processes related to the handling of personal information. This document should include (or have links to) the types of personal information the company holds, and where it holds them. ',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/records-of-processing-activities/",
-           title: 'GDPR Article 30 – Records of processing activities'
+        title: 'Your company does not process medical information collected by a covered entity governed by the Health Insurance Portability and Accountability Act (HIPAA) or California Confidentiality of Medical Information Act (CMIA), entities subject to HIPAA or CMIA or information collected as part of a clinical trial.',
+        role: ['company'],
+        description: '',
+          links: [
+          { 
+            title: "Cal. Civil Code - Section 1798.145 - (c)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
           }
         ]
       },
       {
         id: 4,
-        title: 'Your privacy policy should include a lawful basis to explain why the company needs to process personal information',
-        role: [ 'controller'],
-        description: 'It should contain a reason for data processing, eg the fulfillment of a contract.',
+        title: 'Your company does not process personal information collected, processed, sold, or disclosed pursuant to the Gramm-Leach-Bliley Act or California Financial Privacy Information Act.',
+        role: ['company'],
+        description: '',
         links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/lawfulness-of-processing/",
-           title: 'GDPR Article 6 – Lawfulness of processing'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'accountability-management',
-    title:'Accountability & management',
-    items: [{
-        id: 1,
-        title: 'Your company has appointed a Data Protection Officer (DPO)',
-        role: ['processor', 'controller'],
-        description: 'A DPO is only required in three scenarios: (1) the processing is carried out by a public authority or body, except for courts acting in their judicial capacity; (2) the core activities of the business consist of processing operations which, by virtue of their nature, scope, and/or purposes, require regular and systematic monitoring of data subjects on a large scale, or (3) the core activities of the business consist of processing on a large scale special categories of data (sensitive data) pursuant to Article 9 and personal data relating to criminal convictions or offenses pursuant to Article 10. If a DPO is required, the DPO should have knowledge of GDPR guidelines as well as knowledge about the internal processes that involve personal information.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/designation-of-the-data-protection-officer/",
-           title: 'GDPR Article 37 – Designation of the data protection officer'
-          }
-        ]
-      },
-      {
-        id: 2,
-        title: 'Create awareness among decision makers about GDPR guidelines',
-        role: ['processor', 'controller'],
-        description: 'Make sure key people and decision makers have up-to-date knowledge about the data protection legislation.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
-           title: 'GDPR Article 25 – Data protection by design and by default'
-          }
-        ]
-      },
-      {
-        id: 3,
-        title: 'Make sure your technical security is up to date. ',
-        role: ['processor', 'controller'],
-        description: 'For SaaS software companies, use the SaaS CTO security checklist as a starting point below.',
-        links: [
-          {title: "SaaS CTO security checklist",
-           href: 'https://cto-security-checklist.sqreen.io/'
-          },
-          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
-           title: 'GDPR Article 25 – Data protection by design and by default'
-          }
-        ]
-      },
-      {
-        id: 4,
-        title: 'Train staff to be aware of data protection',
-        role: ['processor'],
-        description: 'A lot of security vulnerabilities involve cooperation of an unwitting person with access to internal systems. Make sure your employees are aware of these risks.',
-        links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
-           title: 'GDPR Article 25 – Data protection by design and by default'
+          { 
+            title: "Cal. Civil Code - Section 1798.145 - (e)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
           }
         ]
       },
       {
         id: 5,
-        title: 'You have a list of sub-processors and your privacy policy mentions your use of this sub-processor',
-        role: ['processor'],
-        description: 'You should inform your customers of the use of any sub-processor. They should consent by accepting your privacy policy.',
+        title: 'Your company does not process information collected, processed, sold, or disclosed pursuant to the Driver’s Privacy Protection Act of 1994.',
+        role: ['company'],
+        description: '',
         links: [
-          {
-            href: "https://advisera.com/eugdpracademy/gdpr/processor/",
-            title: 'GDPR Article 28 – Processor'
-          },
-          {
-            href: "https://www.gdprtracker.io",
-            title: "GDPR Tracker - Keep track of the GDPR compliance of cloud services & subprocessors"
+          { 
+            title: "Cal. Civil Code - Section 1798.145 - (f)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
           }
         ]
       },
       {
         id: 6,
-        title: 'If your business operates outside the EU, you have appointed a representative within the EU.',
-        role: ['processor', 'controller'],
-        description: 'If you have a business outside of the EU and you collect data on EU citizens, you should assign a representative in one of the member states for your business. This person should handle all issues related to processing. In particular, a local authority should be able to contact this person.',
+        title: 'Your company does not take part into a sale of personal information to or from a consumer reporting agency to be reported in or used to generate a consumer report.',
+        role: ['company'],
+        description: '',
         links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/representatives-of-controllers-or-processors-not-established-in-the-union/",
-           title: 'GDPR Article 27 – Representatives of controllers or processors not established in the Union'
+          { 
+            title: "Cal. Civil Code - Section 1798.145 - (d)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
           }
         ]
-      },{
+      },
+      {
         id: 7,
-        title: 'You report data breaches involving personal data to the local authority and to the people (data subjects) involved',
-        role: ['processor', 'controller'],
-        description: 'Personal data breaches should be reported within 72 hours to the local authority. You should report what data has been lost, what the consequences are and what countermeasures you have taken. Unless the data leaked was encrypted, you should also report the breach to the person (data subject) whose data you lost.',
+        title: 'Your company does not take part into efforts to comply with federal, state, or local law; a civil, criminal, or regulatory investigation; or a subpoena or summons that are contrary to the CCPA regulation.',
+        role: ['company'],
+        description: '',
         links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/notification-of-a-personal-data-breach-to-the-supervisory-authority/",
-           title: 'GDPR Article 33 – Notification of a personal data breach to the supervisory authority'
-          },
-          {href: "https://advisera.com/eugdpracademy/gdpr/communication-of-a-personal-data-breach-to-the-data-subject/",
-           title: 'GDPR Article 34 – Communication of a personal data breach to the data subject'
+          { 
+            title: "Cal. Civil Code - Section 1798.145 - (a) - (1)-(2)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
           }
         ]
-      },{
+      },
+      {
         id: 8,
-        title: 'There is a contract in place with any data processors that you share data with',
-        role: [ 'controller'],
-        description: 'The contract should contain explicit instructions for the storage or processing of data by the processor. The contract should set out the subject matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. For example, this could include a contract with your hosting provider. The same contract requirements apply when a processor engages a sub-processor to assist it in fulfilling processing activities on behalf of the controller',
+        title: 'Your company does not cooperates with law enforcement agencies or exercises/defends legal claims that are contrary to the CCPA regulation.',
+        role: ['company'],
+        description: '',
         links: [
-          {
-            href: "https://advisera.com/eugdpracademy/gdpr/processor/",
-            title: 'GDPR Article 28 – Processor'
-          },
-          {href: "https://advisera.com/eugdpracademy/gdpr/processing-under-the-authority-of-the-controller-or-processor/",
-           title: 'GDPR Article 29 – Processing under the authority of the controller or processor'
-          },
-          {
-            href: "https://www.gdprtracker.io",
-            title: "GDPR Tracker - Track hosting centers, DPAs & infrastructure partners from cloud services & subprocessors"
+          { 
+            title: "Cal. Civil Code - Section 1798.145 - (a) - (3)-(4)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
           }
         ]
       }
     ]
   },
   {
-    id: 'new-rights',
-    title:'New rights',
+    id: 'types-of-data',
+    title:'Types of data',
     items: [,
       {
         id: 1,
-        title: 'Your customers can easily request access to their personal information',
-        role: ['processor', 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
+        title: 'Your company processes data as name, address, personal identifier, IP address, email address, account name, Social Security number, driver’s license number, and passport number.',
+        role: ['company'],
+        description: '',
         links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (o) - (1) - (A)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 2,
+        title: 'Your company processes personal information under California’s records destruction law (Cal. Civ. Code § 1798.80(e)), which additionally includes signature, physical characteristics or description, telephone number, insurance policy number, education, employment, employment history, or financial account information.',
+        role: ['company'],
+        description: '',
+        links: [
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (o) - (1) - (B)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: 'Your company processes characteristics of protected classifications under California or federal law.',
+        role: ['company'],
+        description: '',
+        links: [
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (o) - (1) - (C)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 4,
+        title: 'Your company processes commercial information, including records of personal property, products, or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies.',
+        role: ['company'],
+        description: '',
+        links: [
+          {   
+            title: "Cal. Civil Code - Section 1798.140 - (o) - (1) - (D)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 5,
+        title: 'Your company processes biometric information.',
+        role: ['company'],
+        description: '“Biometric information” means an individual’s physiological, biological or behavioral characteristics, including an individual’s deoxyribonucleic acid (DNA), that can be used, singly or in combination with each other or with other identifying data, to establish individual identity. Biometric information includes, but is not limited to, imagery of the iris, retina, fingerprint, face, hand, palm, vein patterns, and voice recordings, from which an identifier template, such as a faceprint, a minutiae template, or a voiceprint, can be extracted, and keystroke patterns or rhythms, gait patterns or rhythms, and sleep, health, or exercise data that contain identifying information.',
+        links: [
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (b)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          },
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (o) - (1) - (E)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 6,
+        title: 'Your company processes internet or other electronic network activity, such as browsing history, search history, and information regarding a consumer’s interaction with a website, application, or advertisement.',
+        role: ['company'],
+        description: '',
+        links: [
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (o) - (1) - (F)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 7,
+        title: 'Your company processes geolocation data.',
+        role: ['company'],
+        description: '',
+        links: [
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (o) - (1) - (G)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 8,
+        title: 'Your company processes audio, electronic, visual, thermal, olfactory, or similar information.',
+        role: ['company'],
+        description: '',
+        links: [
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (o) - (1) - (H)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 9,
+        title: 'Your company processes professional or employment-related information.',
+        role: ['company'],
+        description: '',
+        links: [
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (o) - (1) - (I)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 10,
+        title: 'Your company processes education information that is not publicly available personally identifiable information, as defined in the Family Educational Rights and Privacy Act (20 USC § 1232(g), 34 CFR Part 99).',
+        role: ['company'],
+        description: '',
+        links: [
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (o) - (1) - (J)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 11,
+        title: 'Your company inferences drawn from any of the information listed above to create a profile about a consumer reflecting the consumer’s preferences, characteristics, psychological trends, predispositions, behavior, attitudes, intelligence, abilities, and aptitudes.',
+        role: ['company'],
+        description: '',
+        links: [
+          { 
+            title: "Cal. Civil Code - Section 1798.140 - (o) - (1) - (K)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'internal-processes',
+    title:'Internal processes',
+    items: [,
+      {
+        id: 1,
+        title: 'Your company informs when requested by consumers the categories and specific pieces of personal information you have collected about them.',
+        role: [ 'company'],
+        description: 'You need to specify the categories of sources from which personal information is collected, the business or commercial purpose for collecting or selling personal information, the categories of third parties with whom you share personal information, the specific pieces of personal information you have collected about the consumer, and the categories of the consumer’s personal information that were sold or disclosed for business purposes in the 12 months preceding the consumer’s verifiable request.',
+        links: [
+            { 
+              title: "Cal. Civil Code - Section 1798.100. - (a)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
             },
-            {href: "https://advisera.com/eugdpracademy/gdpr/right-of-access-by-the-data-subject/",
-              title: 'GDPR Article 15 – Right of access by the data subject'
+            { 
+              title: "Cal. Civil Code - Section 1798.110. - (a)-(c)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            },
+            { 
+              title: "Cal. Civil Code - Section 1798.115. - (a)-(c)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
             }
         ]
       },
       {
         id: 2,
-        title: 'Your customers can easily update their own personal information to keep it accurate',
-        role: ['processor', 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
+        title: 'Your company verifies the identity of consumers who make request to get or delete their personal information.',
+        role: [ 'company'],
+        description: 'If you are unable to verify a request, you may deny the request, but you must comply to the greatest extent you can. For example, you must treat a request to delete as a request to opt-out.',
         links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
+            { 
+              title: "Cal. Civil Code - Section 1798.100. - (c)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
             },
-            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-rectification/",
-              title: 'GDPR Article 16 – Right to rectification'
+            { 
+              title: "Cal. Civil Code - Section 1798.105. - (c)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
             }
         ]
       },
       {
         id: 3,
-        title: 'You automatically delete data that your business no longer has any use for',
-        role: ['processor', 'controller'],
-        description: 'You should automate deletion of data you no longer need. For example, you should automatically delete data for customers whose contracts have not been renewed.',
+        title: 'Your company informs the consumer before the point of collection as to the categories of personal information to be collected and the purposes for which the categories of personal information shall be used.',
+        role: [ 'company'],
+        description: '',
         links: [
-            {href: "https://advisera.com/eugdpracademy/gdpr/principles-relating-to-processing-of-personal-data/",
-              title: 'GDPR Article 5 – Principles relating to processing of personal data'
+            { 
+              title: "Cal. Civil Code - Section 1798.100. - (b)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
             }
         ]
       },
       {
         id: 4,
-        title: 'Your customers can easily request deletion of their personal data',
-        role: ['processor', 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
+        title: 'Your company delivers information to consumers free of charge within 45 days, by mail or electronically.',
+        role: [ 'company'],
+        description: 'You may provide personal information to a consumer at any time. The time period to provide the required information may be extended once by an additional 45 days when reasonably necessary, provided the consumer is provided notice of the extension within the first 45-day period. You shall not be required to provide personal information to a consumer more than twice in a 12-month period. The disclosure shall cover the 12-month period preceding the business’s receipt of the verifiable request and shall be made in writing and delivered through the consumer’s account with your company, if the consumer maintains an account with you, or by mail or electronically at the consumer’s option if the consumer does not maintain an account with your company, in a readily useable format that allows the consumer to transmit this information from one entity to another entity without hindrance.',
         links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
-            },
-            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-erasure-right-to-be-forgotten/",
-              title: 'GDPR Article 17 – Right to erasure (‘right to be forgotten’)'
-            }
+          { 
+            title: "Cal. Civil Code - Section 1798.100. - (d)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          },
+          { 
+            title: "Cal. Civil Code - Section 1798.130. - (a) - (2)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
         ]
       },
       {
         id: 5,
-        title: 'Your customers can easily request that you stop processing their data',
-        role: ['processor', 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
+        title: 'The information your company delivers is portable, to the extent technically feasible, in a readily useable format that allows consumers to transmit this information to another entity “without hindrance”.',
+        role: [ 'company'],
+        description: 'There is an exception for personal information that is collected for “single, one-time transactions.”',
         links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
-            },
-            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-restriction-of-processing/",
-              title: 'GDPR Article 18 – Right to restriction of processing'
-            }
+          { 
+            title: "Cal. Civil Code - Section 1798.100. - (d)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
         ]
       },
       {
         id: 6,
-        title: 'Your customers can easily request that their data be delivered to themselves or a 3rd party',
-        role: ['processor', 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
+        title: 'Your company deletes data and responds to customers when requested by them to comply with the CCPA’s right to be forgotten.',
+        role: ['company'],
+        description: 'You need to delete the consumer’s personal information from your records and direct any service providers to delete the consumer’s personal information from their records. For exceptions see Civil Code - SECTION 1798.105. - (d) - (1)-(9).',
         links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
+            { 
+              title: "Cal. Civil Code - Section 1798.105. - (a) & (c)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
             },
-            {href: "https://advisera.com/eugdpracademy/gdpr/right-to-data-portability/",
-              title: 'GDPR Article 20 – Right to data portability'
+            { 
+              title: "Cal. Civil Code - Section 1798.105. - (d) - (1)-(9)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
             }
         ]
       },
       {
         id: 7,
-        title: 'Your customers can easily object to profiling or automated decision making that could impact them',
-        role: ['controller'],
-        description: 'This is only applicable if your company does profiling or any other automated decision making. If you do not already have a process defined for this, we\'ve made an easy online form below.',
+        title: 'Your company creates a process, a response and identifies individuals responsible for consumers to opt-out and therefore not selling their data to third parties in response to such a request.',
+        role: [ 'company'],
+        description: 'Exceptions to such requests include where retention of the consumer’s personal information is necessary to complete a transaction for which the personal information was collected, provide goods and services to the consumer, or otherwise perform a contract with theconsumer, to detect security incidents, fraud, or illegal activity, to exercise free speech, or ensure the right of another consumer to exercise his or her right of free speech, to Enable internal uses that are reasonably aligned with the expectations of the consumer based on the consumer’s relationship with the business, to comply with a legal obligation or to  use the consumer’s personal information internally and in a lawful manner that is compatible with the context in which the consumer provided the information.',
+        links: [ 
+          { 
+              title: "Cal. Civil Code - Section 1798.120 - (a)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 8,
+        title: 'By default your company does not sell consumers personal information when they are between 13 & 16 years of age. Nervetheless your company creates a process to allow them to opt-in.',
+        role: [ 'company'],
+        description: 'To opt-in the consumer, in the case of consumers between 13 and 16 years of age, or the consumer’s parent or guardian, in the case of consumers who are less than 13 years of age, has affirmatively authorized the sale of the consumer’s personal information. A business that willfully disregards the consumer’s age shall be deemed to have had actual knowledge of the consumer’s age. This right may be referred to as the “right to opt-in.”',
+        links: [ 
+          { 
+              title: "Cal. Civil Code - Section 1798.120 - (c)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 9,
+        title: 'Your company does not provides consumers the right to equal service and price.',
+        role: ['company'],
+        description: 'The law prohibits businesses from discriminating against consumers who exercise their rights under the CCPA. A business is specifically prohibited from denying goods or services to a consumer, charging a consumer a different price or rate for goods or services including through the use of discounts or other benefits, imposing penalties on a consumer, providing a consumer with a different level of quality or service, and suggesting a consumer will receive a different price or rate or different level of quality of goods or services.',
         links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
-            },
-            {href: "https://advisera.com/eugdpracademy/gdpr/automated-individual-decision-making-including-profiling/",
-              title: 'Article 22 – Automated individual decision-making, including profiling'
+          { 
+              title: "Cal. Civil Code - Section 1798.125 - (a)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
+        ]
+      },
+      {
+        id: 10,
+        title: 'Your company makes available two or more designated methods for the consumer to request their information, including, at a minimum, a toll-free telephone number and website address (if the business maintains a website).',
+        role: [ 'company'],
+        description: 'A business that operates exclusively online and has a direct relationship with a consumer is only required to provide an email address for submitting requests. Consumers have the right to make such requests twice in any 12-month period.',
+        links: [
+            { 
+              title: "Cal. Civil Code - Section 1798.130. - (a) - (1)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
             }
+        ]
+      },
+      {
+        id: 11,
+        title: 'Your company trains and informs dedicated personnel to properly process new requests to exercise privacy rights.',
+        role: ['company'],
+        description: 'Businesses must ensure that personnel responsible for handling consumer inquiries regarding these new privacy rights are informed of the applicable requirements and know how to direct consumers to exercise those rights.',
+        links: [
+          { 
+            title: "Cal. Civil Code - Section 1798.135 - (a) - (3)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
         ]
       }
     ]
   },
   {
-    id: 'consent',
-    title:'Consent',
-    items: [{
+    id: 'external-communication',
+    title:'External communication',
+    items: [,
+      {
         id: 1,
-        title: 'Where processing is based on consent, such consent must be freely given, specific, informed, and revocable',
-        role: [ 'controller'],
-        description: 'If your website collects personal information in some way, you should have an easily visble link to your privacy policy and confirm that the user accepts your terms and conditions. Consent requires an affirmative action, so pre-ticked boxes are not permitted.',
+        title: 'Your company discloses the consumer’s rights to request the deletion of their personal information.',
+        role: ['company'],
+        description: '',
         links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
-           title: 'GDPR Article 7 – Conditions for consent'
-          }
+            { 
+              title: "Cal. Civil Code - Section 1798.105 - (b)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            }
         ]
       },
       {
         id: 2,
-        title: 'Your privacy policy should be written in clear and understandable terms ',
-        role: [ 'controller'],
-        description: 'It should be written in clear and simple terms and not conceal it\'s intent in any way. Failing to do so could void the agreement entirely. When providing services to children, the privacy policy should be easy enough for them to understand.',
+        title: 'In case your company sells consumers\' personal information you inform your customers that their information may be sold and that they have the “right to opt-out” of the sale of their personal information.',
+        role: [ 'company'],
+        description: '',
         links: [
-          { title: "Watchdog service for terms of service: Terms of Service; Didn't Read",
-           href: 'https://tosdr.org/'
-          },
-          {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
-           title: 'GDPR Article 7.2 – Conditions for consent'
+          { 
+            title: "Cal. Civil Code - Section 1798.120 - (b)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
           }
         ]
       },
       {
         id: 3,
-        title: 'It should be as easy for your customers to withdraw consent as it was to give it in the first place',
-        role: [ 'controller'],
-        description: 'If you do not already have a process defined for this, we\'ve made an easy online form below.',
+        title: 'In case your company offers financial incentives for the collection, the sale, or the deletion of personal information, you need to disclose those financial incentives to your consumers.',
+        role: [ 'company'],
+        description: 'You need to explain how you calculate the value of the personal information and how the incentive is permitted under the CCPA.',
         links: [
-            { title: "GDPR Form: Easy-to-configure web form to manage data requests from your customers & website visitors.",
-             href: 'https://www.gdprform.io'
-            },
-            {href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
-              title: 'GDPR Article 7.3 – Conditions for consent'
-            }
+          { 
+            title: "Cal. Civil Code - Section 1798.125 - (b)",
+            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          }
         ]
       },
       {
         id: 4,
-        title: 'If you process children\'s personal data, verify their age and ask consent from their legal guardian',
-        role: [ 'controller'],
-        description: 'For children younger than 16, you need to make sure a legal guardian has given consent for data processing. If consent is given via your website, you should try to make sure approval was actually given by the legal guardian (and not by the child).',
+        title: 'Your homepage website includes a link to inform consumers that they have the right to opt out of their personal information sale.',
+        role: [ 'company'],
+        description: 'In order to comply with this right to opt out, a business must post a “clear and conspicuous link” on its website’s home page titled “Do Not Sell My Personal Information,” and describe the right and include a link to the “Do Not Sell My Personal Information” page in its online privacy policy',
         links: [
-            {href: "https://advisera.com/eugdpracademy/gdpr/conditions-applicable-to-childs-consent-in-relation-to-information-society-services/",
-              title: 'GDPR Article 8 – Conditions applicable to child’s consent in relation to information society services'
+            { 
+              title: "Cal. Civil Code - Section 1798.135 - (a)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
             }
         ]
       },
       {
         id: 5,
-        title: 'When you update your privacy policy, you inform existing customers',
-        role: [ 'controller'],
-        description: 'for example, by emailing upcoming changes of your privacy policy. Your communication should explain in a simple way what has changed.',
+        title: 'Your company discloses in its online privacy policy a description of consumer\'s rights and the categories of consumer\'s personal information collected and/or sold in the preceding 12 months.',
+        role: ['company'],
+        description: '',
         links: [
-          {
-            href: "https://advisera.com/eugdpracademy/gdpr/conditions-for-consent/",
-            title: 'GDPR Article 7 – Conditions for consent'
-          }
+            { 
+              title: "Cal. Civil Code - Section 1798.130 - (a) - (5)",
+              href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            }
         ]
       }
     ]
   },
   {
-    id: 'follow-up',
-    title:'Follow-up',
-    items: [{
+    id: 'recommendations',
+    title:'Recommendations',
+    items: [,
+      {
         id: 1,
-        title: 'You regularly review policies for changes, effectiveness, changes in handling of data and changes to the state of affairs of other countries your data flows to.',
-        role: [ 'controller'],
-        description: 'You should follow up on best practies and changes to the policies in your local environment. Sign up at the bottom of this page to receive major updates to this list.',
+        title: 'Your company ensures that agreements with service providers are CCPA compliant.',
+        role: ['company'],
+        description: 'The CCPA allows businesses to share personal information with third parties or service providers for business purposes, so long as there is a written contract prohibiting the third party or service provider from selling the personal information or “retaining, using, or disclosing the personal information for any purpose other than for the specific purpose of performing the services specified in the contract. The CCPA defines “business purpose” as “the use of personal information for the business’s or service provider’s operational purposes, or other notified purposes, provided that the use of personal information shall be reasonably necessary and proportionate to achieve the operational purpose for which it was collected.” The CCPA enumerates categories of activities that constitute “business purposes,” including auditing; detecting security incidents; performing services, such as maintaining or servicing accounts, providing customer service, processing payments, fulfilling orders and transactions, and providing analytic services; and undertaking internal research for technological development and demonstration. WithoutaCCPA-compliantserviceprovider agreement, the disclosure of personal information to a vendor may constitute a sale of personal information that triggers the consumer’s opt-out right.',
         links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-by-design-and-by-default/",
-           title: 'GDPR Article 25 – Data protection by design and by default'
-          },
           {
-            href: "https://www.gdprtracker.io",
-            title: "GDPR Tracker - Track hosting centers, DPAs & infrastructure partners from cloud services & subprocessors"
+            title: 'Morgan Lewis Recommendation',
+            href: "https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C"
           }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'special-cases',
-    title:'Special cases',
-    items: [{
-        id: 1,
-        title: 'Your business understands when you must conduct a DPIA for high-risk processing of sensitive data.',
-        role: [ 'controller'],
-        description: 'This is only applies to businesses carrying out large-scale data processing, profiling and other activities with high risk to the rights and freedoms of people. A special assessment should be carried out in these cases.',
-        links: [
-          {href: 'https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/avg-nieuwe-europese-privacywetgeving/data-protection-impact-assessment-dpia',
-           title: 'DPIA according to the Dutch local authority (Dutch)'
-          },
-          {href: "https://advisera.com/eugdpracademy/gdpr/data-protection-impact-assessment/",
-           title: 'GDPR Article 35 – Data protection impact assessment'
-          }
-
         ]
       },
       {
         id: 2,
-        title: 'You should only transfer data outside of the EU to countries that offer an appropriate level of protection',
-        role: ['processor', 'controller'],
-        description: 'You should also disclose these cross-border data flows in your privacy policy.',
+        title: 'Your company creates and maintains a robust incident response plan.',
+        role: ['company'],
+        description: 'While implementing a robust incident response plan has been a best practice for some time, the CCPA’s new statutory damages and civil penalties further underscore the need for a thoughtful and comprehensive approach to breach response because the act will almost certainly lead to a spike in data breach–related litigation in California.',
         links: [
-          {href: "https://advisera.com/eugdpracademy/gdpr/transfers-on-the-basis-of-an-adequacy-decision/",
-           title: 'GDPR Article 45 – Transfers on the basis of an adequacy decision'
-          },
           {
-            href: "https://www.gdprtracker.io",
-            title: "GDPR Tracker - Track hosting center locations & hosting partners from cloud services & subprocessors"
+            title: 'Morgan Lewis Recommendation',
+            href: "https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C"
+          }
+        ]
+      },
+      {
+        id: 3,
+        title: 'Your company maintains records of requests and how you responded for 24 months in order to demonstrate your compliance.',
+        role: ['company'],
+        description: 'Companies that collect, buy, or sell the personal information of more than 4 million consumers have additional record-keeping and training obligations.',
+        links: [
+          {
+            title: 'CCPA Fact Sheet',
+            href: "https://oag.ca.gov/system/files/attachments/press_releases/CCPA%20Fact%20Sheet%20%2800000002%29.pdf"
           }
         ]
       }
@@ -389,6 +512,18 @@ export const steps = [
 ]
 
 export const roles = {
-  'controller': 'Data Controller',
-  'processor': 'Data Processor',
+  'company': 'companies',
+  'consumer': 'consumers',
 }
+
+export const differences = [
+  {id: 1, description: 'The GDPR set a penalty limit of 4% of global annual revenues, while the CCPA does not have a ceiling on regulator penalties.'},
+  {id: 2, description:' Any intentional violation of the CCPA will result in a civil penalty of $ 7,500 per incident.'},
+  {id: 3, description: 'The CCPA has pre-defined minimum ($100) and maximum ($750) damage amounts per consumer per incident for private actions against violators, while the GDPR prescribes neither floor nor ceiling values.'},
+  {id: 4, description: 'The CCPA applies to businesses only, while the GDPR covers any entity that processes  personal data of EU residents.'},
+  {id: 5, description: 'The CCPA has a broader definition of personal information than GDPR.'},
+  {id: 6, description: 'Both legislations have different conditions for access and deletion requests of personal data.'},
+  {id: 7, description: 'The CCPA does not expressly include the right to correct errors in processed personal data.'},
+  {id: 8, description: 'The GDPR allows covered entities to establish equivalent mechanisms, while the CCPA prescribes disclosures, communication channels, and other measures.'},
+  {id: 9, description: 'The CCPA does not expressly include the right to stop automated decision making (i.e., the right to require a human to make decisions that have legal implications/effect).'}
+]
