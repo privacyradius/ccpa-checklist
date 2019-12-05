@@ -18,7 +18,7 @@ const TemplateWrapper = ({ children }) => (
     </a>
 
     <Helmet
-      title="The GDPR Checklist - Your GDPR compliance checklist"
+      title="The CCPA Checklist - Your CCPA compliance checklist"
       meta={[
         { name: 'description', content: description },
         { name: 'keywords', content: keywords },

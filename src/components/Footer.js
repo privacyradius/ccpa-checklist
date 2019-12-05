@@ -47,38 +47,31 @@ const Footer = props => (
     <div className='gradient'>
       <h5>About CCPA Checklist</h5>
       <div className='subtitle'>CCPA Checklist is made to help businesses navigate the CCPA landscape.
-      The project is inspired by <a href='https://cto-security-checklist.sqreen.io/'>The SaaS CTO Security Checklist</a> created by <a href='https://www.sqreen.io'>Sqreen.io</a></div>
+      The project is inspired by <a href='https://gdprchecklist.io/'>The GDPR checklist</a> and created by <a href='https://complianceboard.io'>Complianceboard.io </a></div>
 
       <Makers>
         <Maker
-          key='gertjan'
-          name='Gertjan De Wilde'
-          img={props.gertjan}
+          key='patrick'
+          name='Patrick Dalvinck'
+          img={props.patrick}
           bio={[
             'Co-founder ',
-            <a key='apideck' href='https://www.apideck.com' target='_blank'>Apideck</a>,
-            <a key='apideck' href='https://www.banq.ai/' target='_blank'>banq</a>,
-            ', ', <a key='beatswitch' href='https://www.beatswitch.com' target='_blank'>Beatswitch</a>,
-            ' & ', <a key='pr' href='https://www.privacyradius.com' target='_blank'>Privacy Radius</a>
+            <p><a key='complianceboard' href='https://www.complianceboard.io' target='_blank'>ComplianceBoard</a></p>
           ]}
-          linkedin='https://www.linkedin.com/in/gertjandewilde/'
-          twitter='https://twitter.com/gertjanwilde'
-          producthunt='https://www.producthunt.com/@gertjanwilde'
+          linkedin='https://www.linkedin.com/in/patrickdalvinck/'
+          twitter='https://twitter.com/pdalvinck'
+          producthunt='https://www.producthunt.com/@patrick_dalvinck'
         />
         <Maker
-          key='willem'
-          name='Willem Delbare'
-          img={props.willem}
+          key='evrard'
+          name="Evrard t'Serstvens"
+          img={props.evrard}
           bio={[
             'Co-founder ',
-            <a key='knowles' href='https://www.knowlex.be' target='_blank'>Knowlex</a>,
-            ', ', <a key='officient' href='https://www.officient.io' target='_blank'>Officient</a>,
-            ', ', <a key='futureproofed' href='http://www.futureproofed.com/' target='_blank'>Futureproofed</a>,
-            ', ', <a key='pr' href='https://www.privacyradius.com' target='_blank'>Privacy Radius</a>,
-            ' & ', <a key='teamleader' href='https://www.teamleader.eu' target='_blank'>Teamleader</a>
+            <p><a key='complianceboard' href='https://www.complianceboard.io' target='_blank'>ComplianceBoard</a></p>
           ]}
-          linkedin='https://www.linkedin.com/in/willemdelbare/'
-          producthunt='https://www.producthunt.com/@WillemDB'
+          linkedin='https://www.linkedin.com/in/evrard-t-serstevens-183248a1/'
+          producthunt='https://www.producthunt.com/@evrardts'
         />
         <Maker
           key='johan'
