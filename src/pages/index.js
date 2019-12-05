@@ -163,7 +163,7 @@ class IndexPage extends React.Component {
             <Sidebar />
             <div className="col-9">
               <h1>The CCPA Compliance Checklist</h1>
-              <h2 className="description first">Achieving CCPA Compliance shouldn't feel like a struggle. This is a basic checklist you can use to harden your CCPA compliancy.</h2>
+              <h2 className="small description">After the launch of GDPR, many companies are being confronted with a new legislation, the CCPA. For those of you that are preparing, here's a checklist that will assist you.</h2>
 
               {/* <div style={{ marginTop: '50px', textAlign: 'center', border: '1px solid #EEE', padding: '10px', marginBottom: '20px' }}>
                 <a href="https://app.gdprform.io/register?coupon=earlybird&utm_source=gdprchecklist.op&utm_medium=banner&utm_campaign=gdpr_checklist_early_bird" style={{ color: '#777', textDecoration: 'none', fontSize: '14px', lineHeight: '28px' }}>
@@ -269,7 +269,7 @@ class IndexPage extends React.Component {
 
               <div className="filter-bar">
                 <p className="small description">
-                The list below is far from a legal exhaustive document, it merely tries to help you overcome the struggle.
+                The list below is far from a legal exhaustive document, it's merely meant as a guideline to help you go through the process.
                 <br/><br/>Feel free to <a href="https://github.com/privacyradius/ccpa-checklist" target="_blank">contribute directly</a> on GitHub!
                 </p>
               </div>
@@ -282,6 +282,7 @@ class IndexPage extends React.Component {
               <Newsletter />
               <Footer />
               <Disclaimer />
+
             </div>
           </div>
         </div>
@@ -291,6 +292,7 @@ class IndexPage extends React.Component {
           onMount={data => this.setState(data)}
         />
       </div>
+      
   )}
 }
 

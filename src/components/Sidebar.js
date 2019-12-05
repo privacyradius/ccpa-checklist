@@ -12,7 +12,7 @@ const Sidebar = props => (
     <nav>
     <h4 style={{ marginTop: '20px' }}>Sections</h4>
       <ul>
-        <Scrollspy items={['are-you-impacted','types-of-data', 'internal-processes', 'external-communication', 'recommendations']} currentClassName="is-current">
+        <Scrollspy items={['are-you-impacted','types-of-data', 'internal-processes', 'external-communication', 'recommendations', 'exception', 'consumer-rights']} currentClassName="is-current">
           { steps.map(s => <li key={s.id}><a href={`#${s.id}`}>{s.title}</a></li>)}
         </Scrollspy>
       </ul>
@@ -28,7 +28,7 @@ const Sidebar = props => (
       </ul> */}
       <h4 style={{ marginTop: '20px' }}>Created by</h4>
       <ul>
-        <li><a target="_blank" rel="noopener noreferrer" href='https://www.privacyradius.com'>Privacy Radius</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href='https://www.complianceboard.io'>ComplianceBoard</a></li>
       </ul>
     </nav>
     <div className='newsletter-sidebar'>
