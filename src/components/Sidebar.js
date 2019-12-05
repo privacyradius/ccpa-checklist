@@ -1,6 +1,6 @@
 import React from 'react'
 import { steps } from '../data.js'
-import logo from '../images/logo.svg'
+import logo from '../images/ccpa-shield.png'
 import { url } from '../shared/meta'
 import Scrollspy from 'react-scrollspy'
 
