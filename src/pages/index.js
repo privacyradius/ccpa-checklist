@@ -170,78 +170,65 @@ class IndexPage extends React.Component {
                   <span style={{ background: '#41b541', borderRadius: '2px', marginTop: '20px', color: 'white', padding: '4px 6px' }}>New</span> Manage your data subjects requests with GDPR Form. Start your free trial today and receive a 20% discount. (From the makers of GDPR Tracker & Checklist)
                 </a>
               </div> */}
-              
-              <div className="filter-bar">
-              <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', fontWeight: 'bold', fontSize: '20px'}} trigger="What is the CCPA?">
-                  <div className="filter-bar">
-                  <p className="small description">
-                  "The California Consumer Privacy Act (CCPA) is a California state law that enhances privacy rights and consumer protections for California residents. It regulates what businesses are allowed to do with the personal information they collect from California residents.  
-                  </p>
-                  <p className="small description">
-                  The CCPA aims to put data rights back into the hands of consumers.  Consumer will now be able to understand how their data is actually being used.  They will now have a saying in how and with which third parties their data can be shared.  The CCPA is aimed at enforcing protection and privacy of personal and customer data.
-                  </p>
-                  </div>
-              </Collapsible>
-              </div>
 
-              <div className="filter-bar">
-              <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', fontWeight: 'bold', fontSize: '20px'}} trigger="When does CCPA become active?">
-                  <div className="filter-bar">
-                  <p className="small description">
-                  The California Consumer Privacy Act officially goes into effect on Jan. 1, 2020. 
-                  </p>
-                  <p className="small description">
-                  With its strict guidelines and penalties, the CCPA is considered revolutionary legislation on data protection in the US.  As with the European Union’s General Data Protection Regulations (GDPR) and the launch date approaching fast, we believe that for most companies, achieving compliance is probably going to take longer than expected.
-                  </p>
-                  </div>
-              </Collapsible>
-              </div>
+              <IntroBar title='What is the CCPA'>
+                <p className="small description">
+                "The California Consumer Privacy Act (CCPA) is a California state law that enhances privacy rights and consumer protections for California residents. It regulates what businesses are allowed to do with the personal information they collect from California residents.  
+                </p>
+                <p className="small description">
+                The CCPA aims to put data rights back into the hands of consumers.  Consumer will now be able to understand how their data is actually being used.  They will now have a saying in how and with which third parties their data can be shared.  The CCPA is aimed at enforcing protection and privacy of personal and customer data.
+                </p>
+              </IntroBar>
 
-              <div className="filter-bar">
-              <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', fontWeight: 'bold', fontSize: '20px'}} trigger="Who does the CCPA protect?">
-                  <div className="filter-bar">
-                  <p className="small description">
-                  The CCPA is designed to protect any individual who is a California resident, a household or a device that can be reasonably identified, by any unique identifier.
-                  </p>
-                  <p className="small description">
-                  It's designed to protect California consumers’ data, and to enforce all organisations that deal with California resident data to take their responsibility to safeguard consumer data seriously.
-                  </p>
-                  </div>
-              </Collapsible>
-              </div>
+              <IntroBar title='When does CCPA become active?'>
+                <p className="small description">
+                The California Consumer Privacy Act officially goes into effect on Jan. 1, 2020.  
+                </p>
+                <p className="small description">
+                With its strict guidelines and penalties, the CCPA is considered revolutionary legislation on data protection in the US.  As with the European Union’s General Data Protection Regulations (GDPR) and the launch date approaching fast, we believe that for most companies, achieving compliance is probably going to take longer than expected.
+                </p>
+              </IntroBar>
 
-              <div className="filter-bar">
-              <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', fontWeight: 'bold', fontSize: '20px'}} trigger="Who does the CCPA apply to?">
-                  <div className="filter-bar">
-                  <p className="small description">
-                  Just like with the GDPR, one should not underestimate the global impact of the CCPA. Any organisation globally that collects personal data of California residents and households should validate whether they are required to comply with the CCPA. 
-                  </p>
-                  <p className="small description">
-                  Any organisation that meets one of the following three criteria annually:
-                  </p>
-                  <li className="small description">
-                  Earn revenues greater than $25 million.
-                  </li>
-                  <li className="small description">
-                  Buy, receive, sell or share the personal information of 50,000 or more consumers, households or devices for commercial purposes.
-                  </li>
-                  <li className="small description">
-                  Derive 50 percent of annual revenues from selling consumers’ personal information.
-                  </li>
-                  </div>
-              </Collapsible>
-              </div>
-              
-              <div className="filter-bar">
-              <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', fontWeight: 'bold', fontSize: '20px'}} trigger="What are the key differences between the CCPA and the GDPR?">
-                  <div className="filter-bar">
-                  <p className="small description">
-                  Any business that has already complied with the GDPR standards should be able to extend its policies and practices fairly easily to fit the CCPA’s requirements.  At the same time, one should not underestimate the important differences between both legislations. 
-                  </p>
-                  <p className="small description">
-                  The European legislation could be considered more rigorous overall, even though the CCPA takes a broader view of personal information than the GDPR.  For offenders, there is also a significant difference in the fines structure.
-                  </p>
-                  <h3>Here are the most important differences between the CCPA and GDPR:</h3>
+              <IntroBar title='Who does the CCPA protect?'>
+                <p className="small description">
+                The CCPA is designed to protect any individual who is a California resident, a household or a device that can be reasonably identified, by any unique identifier.  
+                </p>
+                <p className="small description">
+                It's designed to protect California consumers’ data, and to enforce all organisations that deal with California resident data to take their responsibility to safeguard consumer data seriously.
+                </p>
+              </IntroBar>
+
+              <IntroBar title='Who does the CCPA apply to?'>
+                <p className="small description">
+                Just like with the GDPR, one should not underestimate the global impact of the CCPA. Any organisation globally that collects personal data of California residents and households should validate whether they are required to comply with the CCPA.
+                </p>
+                <p className="small description">
+                Any organisation that meets one of the following three criteria annually:
+                </p>
+                <ul>
+                    <li className="small description">
+                    Earn revenues greater than $25 million.
+                    </li>
+                    <li className="small description">
+                    Buy, receive, sell or share the personal information of 50,000 or more consumers, households or devices for commercial purposes.
+                    </li>
+                    <li className="small description">
+                    Derive 50 percent of annual revenues from selling consumers’ personal information.
+                    </li>
+                  </ul>
+              </IntroBar>
+
+              <IntroBar title='What are the key differences between the CCPA and the GDPR?'>
+                <p className="small description">
+                Any business that has already complied with the GDPR standards should be able to extend its policies and practices fairly easily to fit the CCPA’s requirements.  At the same time, one should not underestimate the important differences between both legislations. 
+                </p>
+                <p className="small description">
+                The European legislation could be considered more rigorous overall, even though the CCPA takes a broader view of personal information than the GDPR.  For offenders, there is also a significant difference in the fines structure.
+                </p>
+                <p className="small description">
+                Here are the most important differences between the CCPA and GDPR:
+                </p>
+                <ul>
                   <li className="small description">
                   The GDPR set a penalty limit of 4% of global annual revenues, while the CCPA does not have a ceiling on regulator penalties.
                   </li>
@@ -269,9 +256,8 @@ class IndexPage extends React.Component {
                   <li className="small description">
                   The CCPA does not expressly include the right to stop automated decision making (i.e., the right to require a human to make decisions that have legal implications/effect).
                   </li>
-                  </div>
-              </Collapsible>
-              </div>
+                </ul>
+              </IntroBar>
 
               <div className="filter-bar">
                 <h3>Select who you are:</h3>
@@ -307,5 +293,13 @@ class IndexPage extends React.Component {
       </div>
   )}
 }
+
+const IntroBar = ({ title, children }) => (
+  <div className="intro-bar">
+    <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', fontWeight: 'bold', fontSize: '20px'}} trigger={title}>
+      {children}
+    </Collapsible>
+  </div>
+)
 
 export default IndexPage

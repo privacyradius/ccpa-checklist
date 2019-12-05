@@ -374,7 +374,14 @@ body, html {
   position: relative;
 }
 
+.intro-bar ul {
+  list-style-type: circle;
+  padding-left: 30px;
+}
 
+.intro-bar div {
+  margin-top: 20px;
+}
 
 @media screen and (max-width:960px) {
   .filter-bar h3 {
