@@ -41,9 +41,9 @@ module.exports = class HTML extends React.Component {
                   "@context": "http://schema.org",
                   "@type": "Organization",
                   "name": "CCPA Checklist",
-                  "url": "https://www.ccpachecklist.co",
+                  "url": "https://www.ccpacompliancechecklist.com",
                   "sameAs": [
-                      "https://twitter.com/ccpa_checklist"
+                      "https://twitter.com/complianceboard.io"
                   ]
                 } 
             `}} />

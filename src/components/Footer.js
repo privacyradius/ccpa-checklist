@@ -24,7 +24,7 @@ const Maker = ({ name, img, bio, twitter, linkedin, producthunt }) => (
     <h2 style={{ color: 'white', textTransform: 'none', textAlign: 'center' }}>{name}</h2>
     { img !== undefined ? <Img resolutions={img.resolutions} style={{ maxWidth: '100px', borderRadius: '50px', margin: '0 auto' }} /> : '' }
     <p style={{ color: 'white', marginTop: '10px', marginBottom: '10px', textAlign: 'center', lineHeight: '1.5em' }}>{bio}</p>
-    <div className='socials' style={{ display: 'flex' }}>
+    <div className='socials' style={{ display: 'flex', paddingTop: "10px" }}>
       {twitter !== undefined ? <a href={twitter} target='_blank'>
         <TwitterIcon id='ph' color='#FFF' size={20} />
       </a> : ''}
@@ -41,13 +41,13 @@ const Maker = ({ name, img, bio, twitter, linkedin, producthunt }) => (
 const Footer = props => (
   <footer id='footer'>
     <p className='description' style={{ fontSize: '1em' }}>
-      <a target="_blank" rel="noopener noreferrer" href='https://www.iubenda.com/privacy-policy/52432713'>Privacy Policy</a> | <a target="_blank" rel="noopener noreferrer" href='https://xnvbx2k4.gdprform.io/en'>Exercise your rights</a>
+      <a target="_blank" rel="noopener noreferrer" href='https://www.iubenda.com/privacy-policy/74461933'>Privacy Policy</a> | <a target="_blank" rel="noopener noreferrer" href='https://ccpachecklist.gdprform.io/en'>Exercise your rights</a>
     </p>
 
     <div className='gradient'>
       <h5>About CCPA Checklist</h5>
       <div className='subtitle'>CCPA Checklist is made to help businesses navigate the CCPA landscape.
-      The project is inspired by <a href='https://gdprchecklist.io/'>The GDPR checklist</a> and created by <a href='https://complianceboard.io'>Complianceboard.io </a></div>
+      The project is inspired by <a href='https://gdprchecklist.io/'>The GDPR checklist</a>, created by <a href='https://complianceboard.io'>ComplianceBoard </a></div>
 
       <Makers>
         <Maker
@@ -79,9 +79,7 @@ const Footer = props => (
           img={props.johan}
           bio={[
             'Co-founder ',
-            <a key='pr' href='https://www.privacyradius.com' target='_blank'>Privacy Radius</a>,
-            ', ', <a key='beatswitch' href='https://www.beatswitch.com' target='_blank'>Beatswitch</a>,
-            ' & ', <a key='wunderman' href='https://www.wunderman.com' target='_blank'>CSD Wunderman</a>
+            <p><a key='pr' href='https://www.privacyradius.com' target='_blank'>Privacy Radius</a></p>
           ]}
           linkedin='https://www.linkedin.com/in/johandekeulenaer'
           twitter='https://twitter.com/ActiveLife '

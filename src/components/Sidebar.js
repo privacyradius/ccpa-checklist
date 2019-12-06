@@ -3,11 +3,12 @@ import { steps } from '../data.js'
 import logo from '../images/ccpa-shield.png'
 import { url } from '../shared/meta'
 import Scrollspy from 'react-scrollspy'
+// import Sidebar from "react-sidebar"
 
 const Sidebar = props => (
   <div className="fixed">
     <a href="/">
-      <img src={logo} alt="GDPR Checklist" className="logo" />
+      <img src={logo} alt="CCPA Checklist" className="logo" />
     </a>
     <nav>
     <h4 style={{ marginTop: '20px' }}>Sections</h4>
@@ -32,7 +33,7 @@ const Sidebar = props => (
       </ul>
     </nav>
     <div className='newsletter-sidebar'>
-      <a href="http://eepurl.com/duyFHH" className="submit-button" style={{ marginTop: '10px' }}>Newsletter</a>
+      <a href="http://eepurl.com/dLEX-2" className="submit-button" style={{ marginTop: '10px' }}>Newsletter</a>
     </div>
   </div>
 )
