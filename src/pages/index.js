@@ -298,7 +298,7 @@ class IndexPage extends React.Component {
 
 const IntroBar = ({ title, children }) => (
   <div className="intro-bar">
-    <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', fontWeight: 'bold', fontSize: '20px'}} trigger={title}>
+    <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', fontWeight: 'bold', fontSize: '20px', lineHeight: "40px"}} trigger={title}>
       {children}
     </Collapsible>
   </div>

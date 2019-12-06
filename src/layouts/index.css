@@ -237,6 +237,7 @@ body, html {
   padding-left: 20px;
   width: 190px;
 }
+
 @media screen and (max-width:960px) {
   .fixed {
   width: 100%;

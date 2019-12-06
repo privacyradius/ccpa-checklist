@@ -1,4 +1,4 @@
-<img src="https://github.com/GDPRTracker/GDPR-checklist/blob/master/src/images/github.png">
+<img src="https://github.com/privacyradius/CCPA-checklist/blob/master/src/images/github.png">
 
 ## How to add updates to the checklist
 
@@ -16,9 +16,9 @@
 
 ## Deployment
 
-- changes will automatically be deployed to https://gdprchecklist.io/
+- changes will automatically be deployed to https://ccpacompliancechecklist.io/
 
 ## Attribution
 
-The project is inspired by [The SaaS CTO Security Checklist](https://cto-security-checklist.sqreen.io/) 
-created by [Sqreen.io](https://www.sqreen.io/)
+The project is inspired by [The GDPR Checklist](https://gdprchecklist.io/) 
+created by [ComplianceBoard](https://www.complianceboard.io/)

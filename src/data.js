@@ -275,7 +275,7 @@ export const steps = [
       },
       {
         id: 2,
-        title: 'Your company has to verify the identity of consumers who request to get or delete their personal information.',
+        title: 'Your company has to verify the identity of consumers who request to access or delete their personal information.',
         role: [ 'company'],
         description: 'If you are unable to verify a request, you may deny the request, but you must comply to the greatest extent you can. For example, you must treat a request to delete as a request to opt-out.',
         links: [
@@ -331,9 +331,9 @@ export const steps = [
       },
       {
         id: 6,
-        title: 'Your company has to delete data and respond to customers when they request it to comply with the CCPA’s right to be forgotten.',
+        title: 'your company has to delete personal information when consumers request it.',
         role: ['company'],
-        description: 'You need to delete the consumer’s personal information from your records and direct any service providers to delete the consumer’s personal information from their records. For exceptions see Civil Code - SECTION 1798.105. - (d) - (1)-(9).',
+        description: 'You need to delete the consumer’s personal information from your records and direct any service providers to delete the consumer’s personal information from their records. For exceptions see Civil Code - SECTION 1798.105. - (d) - (1)-(9). Note that each deletion request needs to be followed up by a formal response.',
         links: [
             { 
               title: "Cal. Civil Code - Section 1798.105. - (a) & (c)",
@@ -347,9 +347,9 @@ export const steps = [
       },
       {
         id: 7,
-        title: 'Your company has to create a process, a response and identifies individuals responsible for consumers to opt-out and therefore not selling their data to third parties in response to such a request.',
+        title: 'Your company has to create a process and to identify individuals responsible for consumers to opt-out and therefore not selling their data to third parties in response to such a request.',
         role: [ 'company'],
-        description: 'Exceptions to such requests include where retention of the consumer’s personal information is necessary to complete a transaction for which the personal information was collected, provide goods and services to the consumer, or otherwise perform a contract with theconsumer, to detect security incidents, fraud, or illegal activity, to exercise free speech, or ensure the right of another consumer to exercise his or her right of free speech, to Enable internal uses that are reasonably aligned with the expectations of the consumer based on the consumer’s relationship with the business, to comply with a legal obligation or to  use the consumer’s personal information internally and in a lawful manner that is compatible with the context in which the consumer provided the information.',
+        description: 'Exceptions to such requests include where retention of the consumer’s personal information is necessary to complete a transaction for which the personal information was collected, provide goods and services to the consumer, or otherwise perform a contract with theconsumer, to detect security incidents, fraud, or illegal activity, to exercise free speech, or ensure the right of another consumer to exercise his or her right of free speech, to Enable internal uses that are reasonably aligned with the expectations of the consumer based on the consumer’s relationship with the business, to comply with a legal obligation or to  use the consumer’s personal information internally and in a lawful manner that is compatible with the context in which the consumer provided the information. Note that each opt-out request needs to be followed up by a formal response.',
         links: [ 
           { 
               title: "Cal. Civil Code - Section 1798.120 - (a)",
