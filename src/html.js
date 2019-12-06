@@ -29,10 +29,6 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <meta 
-            name="google-site-verification" 
-            content="rUNq8lzwm3z15gaVNUa43iEQ-gKP0WJhkb_qko81oTc" 
-          />
 
           {/* Schema.org tags */}
           <script type="application/ld+json" dangerouslySetInnerHTML={{
@@ -58,20 +54,16 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-        
+
           <script dangerouslySetInnerHTML={{ 
             __html: `
-            var _iub = _iub || [];
-            _iub.csConfiguration = {
-              cookiePolicyId: 52432713,
-              siteId: 1031622,
-              lang: "en"
-            };
-            (function (w, d) {
-              var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/cookie_solution/stable/iubenda_cs.js"; tag.parentNode.insertBefore(s, tag); };
-              if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; }
-            })(window, document);
-            `}}
+              !(function(p,r,i,v,a,c,y){p['MetomicObject']=a;p[a]=p[a]||function(){
+              (p[a].q=p[a].q||[]).push(arguments)},p[a].l=1*new Date();c=r.createElement(i),
+              y=r.getElementsByTagName(i)[0];c.async=1;c.src=v+'?d='+r.location.host;y.parentNode.insertBefore(c,y)
+              })(window, document, 'script', 'https://consent-manager.metomic.io/embed.js', 'Metomic');
+              Metomic('load', { projectId: 'prj:5c06edf5-2432-4bf1-9d9d-38a0e0be11c8' });
+            `
+            }}
           />
         </body>
       </html>
