@@ -3,6 +3,7 @@ import { Persist } from "react-persist"
 import Link from 'gatsby-link'
 import Sidebar from '../components/Sidebar'
 import Newsletter from '../components/Newsletter'
+import CtaBanner from '../components/CtaBanner'
 import { steps, roles, differences } from '../data.js'
 import meta from '../shared/meta.js'
 import Arrow from '../images/arrow-bottom.svg'
@@ -162,6 +163,7 @@ class IndexPage extends React.Component {
           <div className='columns'>
             <Sidebar />
             <div className="col-9">
+              <CtaBanner />
               <h1>The CCPA Compliance Checklist</h1>
               <h2 className="small description">After the launch of GDPR, many companies are being confronted with a new legislation, the CCPA. For those of you that are preparing, here's a checklist that will assist you.</h2>
 
@@ -297,11 +299,13 @@ class IndexPage extends React.Component {
 }
 
 const IntroBar = ({ title, children }) => (
+  
   <div className="intro-bar">
     <Collapsible triggerStyle={{ background: '#B71234', borderRadius: '4px', color: 'white', padding: '8px 12px', fontWeight: 'bold', fontSize: '20px', lineHeight: "40px"}} trigger={title}>
       {children}
     </Collapsible>
   </div>
+
 )
 
 export default IndexPage
