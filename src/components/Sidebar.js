@@ -22,11 +22,12 @@ const Sidebar = props => (
         <li><a target="_blank" rel="noopener noreferrer" href='https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='>Cal. Civil Code</a></li>
         <li><a target="_blank" rel="noopener noreferrer" href='https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201920200AB25'>Assembly Bill n°25</a></li>
       </ul>
-      {/* <h4 style={{ marginTop: '20px' }}>Compliance tools</h4>
+      <h4 style={{ marginTop: '20px' }}>Compliance tools</h4>
       <ul>
         <li><a target="_blank" rel="noopener noreferrer" href='https://www.gdprform.io'>GDPR Form</a></li>
         <li><a target="_blank" rel="noopener noreferrer" href='https://gdprtracker.io/'>GDPR Tracker</a></li>
-      </ul> */}
+        <li><a target="_blank" rel="noopener noreferrer" href='https://gdprchecklist.io/'>GDPR Checklist</a></li>
+      </ul>
       <h4 style={{ marginTop: '20px' }}>Created by</h4>
       <ul>
         <li><a target="_blank" rel="noopener noreferrer" href='https://www.complianceboard.io'>ComplianceBoard</a></li>
