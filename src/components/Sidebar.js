@@ -3,7 +3,6 @@ import { steps } from '../data.js'
 import logo from '../images/ccpa-shield.png'
 import { url } from '../shared/meta'
 import Scrollspy from 'react-scrollspy'
-// import Sidebar from "react-sidebar"
 
 const Sidebar = props => (
   <div className="fixed">
