@@ -270,6 +270,10 @@ export const steps = [
             { 
               title: "Cal. Civil Code - Section 1798.115. - (a)-(c)",
               href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            },
+            { 
+              title: "Morgan Lewis",
+              href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
             }
         ]
       },
@@ -286,6 +290,10 @@ export const steps = [
             { 
               title: "Cal. Civil Code - Section 1798.105. - (c)",
               href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            },
+            { 
+              title: "Morgan Lewis",
+              href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
             }
         ]
       },
@@ -298,6 +306,10 @@ export const steps = [
             { 
               title: "Cal. Civil Code - Section 1798.100. - (b)",
               href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            },
+            { 
+              title: "Morgan Lewis",
+              href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
             }
         ]
       },
@@ -314,6 +326,10 @@ export const steps = [
           { 
             title: "Cal. Civil Code - Section 1798.130. - (a) - (2)",
             href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          },
+          { 
+            title: "Morgan Lewis",
+            href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
           }
         ]
       },
@@ -326,6 +342,10 @@ export const steps = [
           { 
             title: "Cal. Civil Code - Section 1798.100. - (d)",
             href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          },
+          { 
+            title: "Morgan Lewis",
+            href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
           }
         ]
       },
@@ -342,6 +362,10 @@ export const steps = [
             { 
               title: "Cal. Civil Code - Section 1798.105. - (d) - (1)-(9)",
               href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            },
+            { 
+              title: "Morgan Lewis",
+              href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
             }
         ]
       },
@@ -354,6 +378,10 @@ export const steps = [
           { 
               title: "Cal. Civil Code - Section 1798.120 - (a)",
               href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          },
+          { 
+            title: "Morgan Lewis",
+            href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
           }
         ]
       },
@@ -366,6 +394,10 @@ export const steps = [
           { 
               title: "Cal. Civil Code - Section 1798.120 - (c)",
               href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          },
+          { 
+            title: "Morgan Lewis",
+            href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
           }
         ]
       },
@@ -378,6 +410,10 @@ export const steps = [
           { 
               title: "Cal. Civil Code - Section 1798.125 - (a)",
               href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          },
+          { 
+            title: "Morgan Lewis",
+            href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
           }
         ]
       },
@@ -390,6 +426,10 @@ export const steps = [
             { 
               title: "Cal. Civil Code - Section 1798.130. - (a) - (1)",
               href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            },
+            { 
+              title: "Morgan Lewis",
+              href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
             }
         ]
       },
@@ -402,6 +442,10 @@ export const steps = [
           { 
             title: "Cal. Civil Code - Section 1798.135 - (a) - (3)",
             href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          },
+          { 
+            title: "Morgan Lewis",
+            href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
           }
         ]
       }
@@ -420,6 +464,10 @@ export const steps = [
             { 
               title: "Cal. Civil Code - Section 1798.105 - (b)",
               href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            },
+            { 
+              title: "Morgan Lewis",
+              href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
             }
         ]
       },
@@ -432,6 +480,10 @@ export const steps = [
           { 
             title: "Cal. Civil Code - Section 1798.120 - (b)",
             href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          },
+          { 
+            title: "Morgan Lewis",
+            href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
           }
         ]
       },
@@ -444,6 +496,10 @@ export const steps = [
           { 
             title: "Cal. Civil Code - Section 1798.125 - (b)",
             href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+          },
+          { 
+            title: "Morgan Lewis",
+            href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
           }
         ]
       },
@@ -456,6 +512,10 @@ export const steps = [
             { 
               title: "Cal. Civil Code - Section 1798.135 - (a)",
               href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            },
+            { 
+              title: "Morgan Lewis",
+              href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
             }
         ]
       },
@@ -468,6 +528,10 @@ export const steps = [
             { 
               title: "Cal. Civil Code - Section 1798.130 - (a) - (5)",
               href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            },
+            { 
+              title: "Morgan Lewis",
+              href: 'https://www.morganlewis.com/-/media/files/document/2019/california-consumer-privacy-act-checklist.ashx?la=en&hash=0A8A3C710055C4F888204D0D58B3CC89E7FBB41C'
             }
         ]
       }
