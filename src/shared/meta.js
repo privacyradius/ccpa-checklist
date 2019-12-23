@@ -1,6 +1,6 @@
 export const productName = 'The CCPA Checklist'
 export const url = 'http://ccpacompliancechecklist.com'
-export const description = 'Achieving CCPA Compliance shouldn\'t feel like a struggle. This is a basic checklist you can use to harden your GDPR compliancy. '
+export const description = 'Achieving CCPA Compliance shouldn\'t feel like a struggle. This is a basic checklist you can use to harden your CCPA compliancy.'
 export const keywords = 'CCPA, GDPR, Privacy, Data, California, Compliance, CCPA Checklist, CCPA Compliance, Security, California Consumer Privacy Act'
 export const title = 'The CCPA Checklist - Your CCPA compliance checklist'
 export const twitter = '@complianceboard.io'
