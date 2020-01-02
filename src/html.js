@@ -47,8 +47,8 @@ module.exports = class HTML extends React.Component {
           <script src="https://config.metomic.io/config.js?id=prj:5c06edf5-2432-4bf1-9d9d-38a0e0be11c8" crossorigin charset="utf-8"></script>
           <script src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
 
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117545630-6"></script>
-          <script dangerouslySetInnerHTML={{
+          <script type="text/x-metomic" data-micropolicy="statistics"  async src="https://www.googletagmanager.com/gtag/js?id=UA-117545630-6"></script>
+          <script type="text/x-metomic" data-micropolicy="statistics" dangerouslySetInnerHTML={{
             __html: `
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
