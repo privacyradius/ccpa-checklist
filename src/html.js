@@ -43,6 +43,9 @@ module.exports = class HTML extends React.Component {
                   ]
                 } 
             `}} />
+          
+          <script src="https://config.metomic.io/config.js?id=prj:5c06edf5-2432-4bf1-9d9d-38a0e0be11c8" crossorigin charset="utf-8"></script>
+          <script src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
           {this.props.headComponents}
           {css}
         </head>
@@ -55,16 +58,6 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
 
-          <script dangerouslySetInnerHTML={{ 
-            __html: `
-              !(function(p,r,i,v,a,c,y){p['MetomicObject']=a;p[a]=p[a]||function(){
-              (p[a].q=p[a].q||[]).push(arguments)},p[a].l=1*new Date();c=r.createElement(i),
-              y=r.getElementsByTagName(i)[0];c.async=1;c.src=v+'?d='+r.location.host;y.parentNode.insertBefore(c,y)
-              })(window, document, 'script', 'https://consent-manager.metomic.io/embed.js', 'Metomic');
-              Metomic('load', { projectId: 'prj:5c06edf5-2432-4bf1-9d9d-38a0e0be11c8' });
-            `
-            }}
-          />
         </body>
       </html>
     )
