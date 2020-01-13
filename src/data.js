@@ -23,7 +23,7 @@ export const steps = [
         links: [
           { 
             title: "Cal. Civil Code - Section 1798.140 - (c) - (1) - (A)-(C)",
-            href: 'https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article='
+            href: "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&division=3.&title=1.81.5.&part=4.&chapter=&article="
           }
         ]
       }
@@ -574,6 +574,28 @@ export const steps = [
           {
             title: 'CCPA Fact Sheet',
             href: "https://oag.ca.gov/system/files/attachments/press_releases/CCPA%20Fact%20Sheet%20%2800000002%29.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'amendments',
+    title:'Amendments',
+    items: [,
+      {
+        id: 1,
+        title: 'In case you are a Data Broker company, you need to register annually with the Attorney General and provide information about how consumers may opt out of the sale of their personal information',
+        role: ['company'],
+        description: 'Data broker is defined as a business that knowingly collects and sells to third parties the personal information of a consumer with whom the business does not have a direct relationship.',
+        links: [
+          { 
+            title: "Assembly Bill No. 1202",
+            href: "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB1202&firstNav=tracking"
+          },
+          {
+            title: "Data Broker Registration Center",
+            href: "https://oag.ca.gov/data-broker/register"
           }
         ]
       }
