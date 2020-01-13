@@ -12,7 +12,7 @@ const Sidebar = props => (
     <nav>
     <h4 style={{ marginTop: '20px' }}>Sections</h4>
       <ul>
-        <Scrollspy items={['are-you-impacted','types-of-data', 'internal-processes', 'external-communication', 'recommendations', 'exception', 'consumer-rights']} currentClassName="is-current">
+        <Scrollspy items={['are-you-impacted','types-of-data', 'internal-processes', 'external-communication', 'recommendations', 'exception', 'amendments', 'consumer-rights']} currentClassName="is-current">
           { steps.map(s => <li key={s.id}><a href={`#${s.id}`}>{s.title}</a></li>)}
         </Scrollspy>
       </ul>
