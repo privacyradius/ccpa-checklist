@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'The GDPR Checklist',
-    siteUrl: 'https://gdprchecklist.io'
+    title: 'The CCPA Checklist',
+    siteUrl: 'https://ccpacompliancechecklist.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -18,15 +18,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://gdprchecklist.io',
-        sitemap: 'https://gdprchecklist.io/sitemap.xml',
+        host: 'https://ccpacompliancechecklist.com',
+        sitemap: 'https://ccpacompliancechecklist.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
-      }
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-117545630-6'
       }
     },
     {
