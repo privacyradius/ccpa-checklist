@@ -52,7 +52,7 @@ class CtaBanner extends React.Component {
                             With <span>ComplianceBoard</span> you can demonstrate your compliance, privacy and security to your customers in one holistic view.
                         </p> */}
                         <p>
-                            We just launched Data Breaches, our latest community project whereyou can find information about data breaches, regulators and fines.
+                            We just launched Data Breaches, our latest community project where you can find information about data breaches, regulators and fines.
                         </p>
                         <a href={linkDataBreaches} rel="nofollow" target="_blank" className="buttonSignUpProductHunt">Visit Data Breaches</a>
                         <div className={buttonCloseContainer} onClick={this.handleClick}>
