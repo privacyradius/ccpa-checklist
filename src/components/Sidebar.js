@@ -26,6 +26,7 @@ const Sidebar = props => (
         <li><a target="_blank" rel="noopener noreferrer" href='https://www.gdprform.io'>GDPR Form</a></li>
         <li><a target="_blank" rel="noopener noreferrer" href='https://gdprtracker.io/'>GDPR Tracker</a></li>
         <li><a target="_blank" rel="noopener noreferrer" href='https://gdprchecklist.io/'>GDPR Checklist</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href='https://databreach.es/'>DATA Breaches</a></li>
       </ul>
       <h4 style={{ marginTop: '20px' }}>Created by</h4>
       <ul>
